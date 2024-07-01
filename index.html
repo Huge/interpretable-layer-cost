@@ -38,10 +38,10 @@
     <div class="container">
         <h1>LLM Training Cost Calculator</h1>
         <label for="hidden-dim">Hidden Dimension (4096 - 8192, usually):</label>
-        <input type="number" id="hidden-dim" placeholder="Enter hidden dimension" required>
+        <input type="number" id="hidden-dim" step="4096" placeholder="Enter hidden dimension" required>
         
         <label for="samples">Number of Samples for training the SAE (at least one per feature, we estimate):</label>
-        <input type="number" id="samples" placeholder="Enter number of samples" required>
+        <input type="number" id="samples" step="1000000" placeholder="Enter number of samples" required>
         
         <label for="weight-cost">Cost Per Weight Training, U$D (around 0.0001 on modern graphic cards):</label>
         <input type="number" id="weight-cost" step="0.0001" placeholder="Enter cost per weight training" required>
@@ -76,7 +76,7 @@
                                    <p>Encoder Weights: ${encoderWeights.toLocaleString()}</p>
                                    <p>Decoder Weights: ${decoderWeights.toLocaleString()}</p>
                                    <p>Total Weights: ${totalWeights.toLocaleString()}</p>
-                                   <p><strong>Estimated Cost: $${trainingCost.toLocaleString()}</strong></p>`;
+                                   <p><strong>Estimated Cost: $${trainingCost.toLocaleString()} USD</strong></p>`;
         }
     </script>
 </body>
