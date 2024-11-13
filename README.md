@@ -1,5 +1,6 @@
 # interpretable-layer-cost
-A calculator for estimating the _compute_ cost of building a sparse auto-encoder layer into an LLM to make concepts inside such LLM interpretable.
+A calculator for estimating the _compute_ cost of building a sparse auto-encoder layer into an LLM to make concepts inside such LLM interpretable. Auto-published at https://huge.github.io/interpretable-layer-cost
+
 
 todo: 
 1. add intro about http://transformer-circuits.pub/2023/monosemantic-features/index.html#problem-setup , short read, ..
